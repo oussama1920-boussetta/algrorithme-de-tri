@@ -8,13 +8,13 @@ BEGIN
     si A<B et A<C 
     i(A):=0
     si non
-    end
+    FIN
     pour (i allant de 1 pas i-1 )
     LIRE (B.(length[i]))
     si B>A et B<C 
     i(B):=1
     si non
-    end
+    FIN
     pour (i allant de 1 pas i-1 )
     LIRE (B.(length[i]))
  
