@@ -1,0 +1,35 @@
+
+ALGORITHM algorithm_tri
+VAR
+   myChar :CHAR;
+    countvoyelle,countmots,chLength: INTEGER := 0 ;
+  
+
+BEGIN
+
+REPEAT
+    Write("enter your sentence character by character")
+    Read(myChar);
+    chLength:= chLength + 1;
+
+  IF (myChar = ' ') THEN
+      countmots := countmots + 1;
+  END_IF
+
+SWITCH (myChar) DO
+    case 'o' : countvoyelle := countvoyelle +1;BREAK;
+    case 'i' : countvoyelle := countvoyelle +1;BREAK;
+    case 'e' : countvoyelle := countvoyelle +1;BREAK;
+    case 'a' : countvoyelle := countvoyelle +1;BREAK;
+    case 'u' : countvoyelle := countvoyelle +1;BREAK;
+    case 'y' : countvoyelle := countvoyelle +1;BREAK;
+ 
+END_SWITCH
+
+    
+UNTIL (myChar == ".")
+ Write("The length of the sentence", chLength)
+  Write("The number of mots in the sentence", countmots + 1)
+   Write("The number of voyelle in the sentence", countvoyelle)
+
+END
